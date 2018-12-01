@@ -30,14 +30,14 @@ public class BossAttack3 : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(bossattackcontrol());
+       // StartCoroutine(bossattackcontrol());
     }
 
-    public void BossAttack()
+    void bossattack3()
     {
         StartCoroutine(bossattackcontrol());
     }
-
+    
     IEnumerator bossattackcontrol()
     {
         for (int i = 0; i < 3; i++)

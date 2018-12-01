@@ -227,6 +227,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4558148801337600}
   - component: {fileID: 95557366534539066}
+  - component: {fileID: 114392421440621180}
+  - component: {fileID: 114134077508260828}
+  - component: {fileID: 114226196558411650}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -363,22 +366,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1600314509248618
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4083176853386844}
-  - component: {fileID: 114974969816384490}
-  m_Layer: 0
-  m_Name: BossAttack (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1630516606962990
 GameObject:
   m_ObjectHideFlags: 1
@@ -488,22 +475,6 @@ GameObject:
   - component: {fileID: 212599396513920270}
   m_Layer: 0
   m_Name: BossDieThunder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1791109060214158
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4758539526363158}
-  - component: {fileID: 114510220541164700}
-  m_Layer: 0
-  m_Name: BossAttack (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,22 +620,6 @@ GameObject:
   - component: {fileID: 4045664008225542}
   m_Layer: 0
   m_Name: AttackPos1 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1903148237620242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4314139411355204}
-  - component: {fileID: 114129786414309694}
-  m_Layer: 0
-  m_Name: BossAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -847,19 +802,6 @@ Transform:
   m_Father: {fileID: 4373372976018872}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4083176853386844
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600314509248618}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4558148801337600}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4133126326847490
 Transform:
   m_ObjectHideFlags: 1
@@ -976,19 +918,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4968093785653670}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4314139411355204
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1903148237620242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4558148801337600}
-  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4360079512122800
 Transform:
@@ -1214,9 +1143,6 @@ Transform:
   - {fileID: 4660998801894092}
   - {fileID: 4217236789855018}
   - {fileID: 4995600666999966}
-  - {fileID: 4314139411355204}
-  - {fileID: 4083176853386844}
-  - {fileID: 4758539526363158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1297,19 +1223,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4558148801337600}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4758539526363158
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1791109060214158}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4558148801337600}
-  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4826661484058636
 Transform:
@@ -1952,64 +1865,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114129786414309694
+--- !u!114 &114134077508260828
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1903148237620242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffbd060f0c75aa64eba1c0dac7548bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackon: 0
-  Attackpos1: {fileID: 4962956762191112}
-  Attackpos2: {fileID: 4541279901137174}
-  Attackpos3: {fileID: 4947450443953404}
-  Attackpos1_core: {fileID: 4045664008225542}
-  Attackpos2_core: {fileID: 4975372338766248}
-  Attackpos3_core: {fileID: 4300867540076422}
-  bossbullet1: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
-    type: 2}
-  bossbullet2: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
-    type: 2}
-  bossbullet3: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
-    type: 2}
-  mode: 1
-  speed: 10
---- !u!114 &114510220541164700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1791109060214158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94f6c66a99d4381428eece606ed83dc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackon: 0
-  Attackpos1: {fileID: 4389493843198726}
-  Attackpos2: {fileID: 4471862049436636}
-  Attackpos3: {fileID: 4686553143093196}
-  Attackpos1_core: {fileID: 4417082161909222}
-  Attackpos2_core: {fileID: 4417082161909222}
-  Attackpos3_core: {fileID: 4417082161909222}
-  bossbullet1: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
-    type: 2}
-  bossbullet2: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
-    type: 2}
-  bossbullet3: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
-    type: 2}
-  mode: 1
-  speed: 1
---- !u!114 &114974969816384490
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1600314509248618}
+  m_GameObject: {fileID: 1405460751516638}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10de285432789e54ebe1b486f1f6bc8b, type: 3}
@@ -2030,6 +1891,58 @@ MonoBehaviour:
     type: 2}
   mode: 1
   speed: 1
+--- !u!114 &114226196558411650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405460751516638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f6c66a99d4381428eece606ed83dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackon: 0
+  Attackpos1: {fileID: 4389493843198726}
+  Attackpos2: {fileID: 4471862049436636}
+  Attackpos3: {fileID: 4686553143093196}
+  Attackpos1_core: {fileID: 4417082161909222}
+  Attackpos2_core: {fileID: 4417082161909222}
+  Attackpos3_core: {fileID: 4417082161909222}
+  bossbullet1: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
+    type: 2}
+  bossbullet2: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
+    type: 2}
+  bossbullet3: {fileID: 1985675383482528, guid: fa30c21e4f837f3439ba4532a0fa9718,
+    type: 2}
+  mode: 1
+  speed: 1
+--- !u!114 &114392421440621180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1405460751516638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffbd060f0c75aa64eba1c0dac7548bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackon: 0
+  Attackpos1: {fileID: 4962956762191112}
+  Attackpos2: {fileID: 4541279901137174}
+  Attackpos3: {fileID: 4947450443953404}
+  Attackpos1_core: {fileID: 4045664008225542}
+  Attackpos2_core: {fileID: 4975372338766248}
+  Attackpos3_core: {fileID: 4300867540076422}
+  bossbullet1: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
+    type: 2}
+  bossbullet2: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
+    type: 2}
+  bossbullet3: {fileID: 1164357147153666, guid: 8bc8ffd7a8b0cb749bf600d7c0daa26e,
+    type: 2}
+  mode: 1
+  speed: 10
 --- !u!135 &135160573987898656
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -29,9 +29,14 @@ public class BossAttack : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-       StartCoroutine(bossattackcontrol());
+       //StartCoroutine(bossattackcontrol());
 	}
 	
+    void bossattack1()
+    {
+        StartCoroutine(bossattackcontrol());
+    }
+
     IEnumerator bossattackcontrol()
     {
         for (int i = 0; i < 3; i++)

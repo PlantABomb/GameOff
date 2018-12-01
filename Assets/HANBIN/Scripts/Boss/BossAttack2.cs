@@ -30,6 +30,11 @@ public class BossAttack2 : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+      
+    }
+
+    void bossattack2()
+    {
         StartCoroutine(bossattackcontrol());
     }
 
