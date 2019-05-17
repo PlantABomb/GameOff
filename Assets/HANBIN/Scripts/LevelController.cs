@@ -22,10 +22,10 @@ public class LevelController : MonoBehaviour {
         Instance = this;
         levelindex = 0;
 
-        StartCoroutine(animcontrol());
+        StartCoroutine(levelcontrol());
     }
 	
-    IEnumerator animcontrol()
+    IEnumerator levelcontrol()
     {
         while (GameManager.Instance.isPlaying) {  // true 는 playable 인지 아닌지
             if(levelindex == Level.Length)
@@ -68,7 +68,7 @@ public class LevelController : MonoBehaviour {
             onemore = true;
         if(onemore)
         {
-            StartCoroutine(animcontrol());
+            StartCoroutine(levelcontrol());
             onemore = false;
         }
 	}
