@@ -20,7 +20,6 @@ public class LevelController : MonoBehaviour {
 
     void Start () {
         Instance = this;
-        // MakeLevelFalse();
         levelindex = 0;
 
         StartCoroutine(animcontrol());
@@ -46,34 +45,20 @@ public class LevelController : MonoBehaviour {
                     anim.SetBool("pattern2on", false);
                 }
                 yield return new WaitForSeconds(0.5f);
-                //MakeLevelFalse();
                 levelindex = 0;
-                //Level[levelindex].SetActive(true);
                 instance = Instantiate(Level[levelindex], center.position, center.rotation);
                 yield return new WaitForSeconds(20f);
                 Destroy(instance);
-                //Level[levelindex].SetActive(false);
                 levelindex++;
-                //Instantiate(Level[levelindex], center.position, center.rotation);
             }
             else
             {
-                //Level[levelindex].SetActive(true);
                 instance = Instantiate(Level[levelindex], center.position, center.rotation);
                 yield return new WaitForSeconds(21f);
                 Destroy(instance);
-                //Level[levelindex].SetActive(false);
                 levelindex++;
             }
             
-        }
-    }
-
-    void MakeLevelFalse()
-    {
-        for (int i = 0; i < Level.Length; i++)
-        {
-            Level[i].SetActive(false);
         }
     }
 
